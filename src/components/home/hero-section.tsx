@@ -37,7 +37,7 @@ export function HeroSection() {
           {/* End Buttons */}
         </div>
         <Image
-          src="/assets/student-img-boy.webp"
+          src="/assets/student-img.webp"
           alt="student-img"
           width={930}
           height={1055}
