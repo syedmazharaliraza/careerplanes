@@ -87,13 +87,3 @@ export async function GET() {
         return NextResponse.json({ error: 'Failed to fetch Vimeo data' }, { status: 500 });
     }
 }
-
-export async function getVideosInFolder(folderId: string) {
-    const response = await fetch(`https://api.vimeo.com/me/projects/${folderId}/videos`, {
-        headers: {
-            'Authorization': `Bearer ${process.env.VIMEO_ACCESS_TOKEN}`,
-        },
-    })
-    const data = await response.json()
-    return data.data
-}
