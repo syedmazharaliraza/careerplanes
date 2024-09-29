@@ -6,7 +6,7 @@ import { useSearchParams } from "next/navigation";
 
 const SignInPage = () => {
   const searchParams = useSearchParams();
-  const error = searchParams.get("error");
+  const error = searchParams?.get("error");
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
