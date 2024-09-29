@@ -28,7 +28,7 @@ function VimeoVideo({ video }: { video: Video }) {
         </div>
         <p className="text-gray-600 mb-4">{video.description}</p>
       </div>
-      <div className="p-8">
+      <div className="p-2 md:p-8">
         <iframe
           src={`https://player.vimeo.com/video/${videoId}?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
           allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
@@ -189,7 +189,7 @@ export default function VimeoLibrary() {
   return (
     <div className="vimeo-library bg-gray-100 min-h-screen p-6">
       <h2 className="text-3xl font-bold mb-8 text-gray-800">All courses</h2>
-      <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
+      <div className="flex flex-col-reverse lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6">
         <div className="w-full lg:w-1/4">
           <div className="bg-white rounded-lg shadow-lg p-4">
             <h3 className="text-xl font-semibold mb-4 text-gray-700">
