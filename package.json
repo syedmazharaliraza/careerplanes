@@ -9,26 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/core": "^0.34.2",
     "@radix-ui/react-navigation-menu": "^1.2.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.52.2",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.416.0",
     "next": "14.2.5",
+    "next-auth": "^4.24.8",
     "next-sanity": "^9.4.5",
     "react": "^18",
     "react-dom": "^18",
     "sanity": "^3.52.2",
     "styled-components": "^6.1.12",
     "tailwind-merge": "^2.4.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vimeo": "^2.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/vimeo": "^2.1.8",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",

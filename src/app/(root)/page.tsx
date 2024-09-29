@@ -4,20 +4,28 @@ import {
   HeroSection,
   OurVision,
 } from "@/components/home";
-import Head from "next/head";
+import { getSession } from "@/lib/auth";
+import { redirect } from "next/navigation";
+import { Metadata } from "next";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Top Notch∆ Education & Research",
+  description: "Top Notch Education & Research",
+};
+
+export default async function Home() {
+  const session = await getSession();
+
+  if (session) {
+    redirect("/dashboard");
+  }
+
   return (
     <main>
-      <Head>
-        <title>Top Notch∆ Education & Research</title>{" "}
-        <meta name="description" content="Top Notch Education & Research" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <HeroSection />
-      <Courses />
-      <OurVision />
+      {/* <Courses /> */}
       <FeatureBanner />
+      <OurVision />
     </main>
   );
 }

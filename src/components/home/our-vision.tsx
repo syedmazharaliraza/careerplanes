@@ -1,8 +1,8 @@
 import {
-  BookOpenIcon,
+  GraduationCapIcon,
   ChevronRightIcon,
-  MessagesSquareIcon,
-  ThumbsUpIcon,
+  UsersIcon,
+  BriefcaseIcon,
 } from "lucide-react";
 
 export function OurVision() {
@@ -14,19 +14,19 @@ export function OurVision() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="lg:w-3/4">
             <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
-              Collaborative tools to design better user experience
+              Empowering Students for Professional Success
             </h2>
             <p className="mt-3 text-muted-foreground">
-              We help businesses bring ideas to life in the digital world, by
-              designing and implementing the technology tools that they need to
-              win.
+              At Career Planes, we bridge the gap between campus and corporate
+              life by providing comprehensive training in essential skills that
+              make you stand out in the job market.
             </p>
             <p className="mt-5">
               <a
                 className="inline-flex items-center gap-x-1 group font-medium hover:underline underline-offset-4 "
                 href="#"
               >
-                Contact sales to learn more
+                Explore our courses to learn more
                 <ChevronRightIcon className="flex-shrink-0 w-4 h-4 transition ease-in-out group-hover:translate-x-1" />
               </a>
             </p>
@@ -37,16 +37,16 @@ export function OurVision() {
             <div className="flex">
               {/* Icon */}
               <span className="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] rounded-full bg-primary text-primary-foreground">
-                <BookOpenIcon className="flex-shrink-0 w-5 h-5" />
+                <GraduationCapIcon className="flex-shrink-0 w-5 h-5" />
               </span>
               <div className="ms-5 sm:ms-8">
                 <h3 className="text-base sm:text-lg font-semibold">
-                  Industry-leading documentation
+                  Comprehensive Skill Development
                 </h3>
                 <p className="mt-1 text-muted-foreground">
-                  Our documentation and extensive Client libraries contain
-                  everything a business needs to build a custom integration in a
-                  fraction of the time.
+                  Our courses cover a wide range of communication and
+                  interpersonal skills essential for professional success in any
+                  industry.
                 </p>
               </div>
             </div>
@@ -55,15 +55,16 @@ export function OurVision() {
             <div className="flex">
               {/* Icon */}
               <span className="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] rounded-full bg-primary text-primary-foreground">
-                <MessagesSquareIcon className="flex-shrink-0 w-5 h-5" />
+                <UsersIcon className="flex-shrink-0 w-5 h-5" />
               </span>
               <div className="ms-5 sm:ms-8">
                 <h3 className="text-base sm:text-lg font-semibold">
-                  Developer community support
+                  Expert-led Training
                 </h3>
                 <p className="mt-1 text-muted-foreground">
-                  We actively contribute to open-source projects—giving back to
-                  the community through development, patches, and sponsorships.
+                  Learn from industry professionals who bring real-world
+                  experience to help you develop practical skills that employers
+                  value.
                 </p>
               </div>
             </div>
@@ -72,15 +73,16 @@ export function OurVision() {
             <div className="flex">
               {/* Icon */}
               <span className="flex-shrink-0 inline-flex justify-center items-center w-[46px] h-[46px] rounded-full bg-primary text-primary-foreground">
-                <ThumbsUpIcon className="flex-shrink-0 w-5 h-5" />
+                <BriefcaseIcon className="flex-shrink-0 w-5 h-5" />
               </span>
               <div className="ms-5 sm:ms-8">
                 <h3 className="text-base sm:text-lg font-semibold">
-                  Simple and affordable
+                  Career-Ready Preparation
                 </h3>
                 <p className="mt-1 text-muted-foreground">
-                  From boarding passes to movie tickets, there&apos;s pretty
-                  much nothing you can&apos;t do.
+                  Our courses are designed to give you a competitive edge in the
+                  job market, preparing you for successful transitions from
+                  campus to corporate life.
                 </p>
               </div>
             </div>
