@@ -4,8 +4,6 @@ import {
   HeroSection,
   OurVision,
 } from "@/components/home";
-import { getSession } from "@/lib/auth";
-import { redirect } from "next/navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,12 +12,6 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  const session = await getSession();
-
-  if (session) {
-    redirect("/dashboard");
-  }
-
   return (
     <main>
       <HeroSection />

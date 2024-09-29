@@ -1,5 +1,5 @@
 import NextAuth, { DefaultSession } from "next-auth";
-import GoogleProvider from "next-auth/providers/google";
+import { authOptions } from '@/lib/auth'; // Make sure to export this function from lib/auth.ts
 
 // Extend the built-in session type
 declare module "next-auth" {
@@ -10,25 +10,6 @@ declare module "next-auth" {
     }
 }
 
-const handler = NextAuth({
-    providers: [
-        GoogleProvider({
-            clientId: process.env.GOOGLE_CLIENT_ID!,
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
-        }),
-    ],
-    // Add the following options
-    session: {
-        strategy: "jwt",
-    },
-    callbacks: {
-        async session({ session, token }) {
-            if (session.user) {
-                session.user.id = token.sub!;
-            }
-            return session;
-        },
-    },
-});
+const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
